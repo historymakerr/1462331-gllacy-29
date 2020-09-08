@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Danil Belov](https://up.htmlacademy.ru/htmlcss/29/user/1462331).
-* Наставник: `Неизвестно`.
+* Наставник: [Виктор Кан](https://htmlacademy.ru/profile/viktorkan).
 
 ---
 
