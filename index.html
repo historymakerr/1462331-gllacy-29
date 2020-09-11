@@ -1,12 +1,249 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Глейси</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
 
-  </body>
+<body class="page-body" style="background-image: url('')">
+  <header class="header">
+    <div class="container">
+      <div class="header-top">
+        <div class="header-left">
+          <div class="header-logo">
+            <a class="header-logo__link" href="#">
+              <img class="header-logo__image" src="https://via.placeholder.com/150x100" alt="Лого GllacyShop">
+            </a>
+          </div>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="catalog.html">Каталог</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="">Доставка и оплата</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="">О компании</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header-right">
+          <div class="header-search">
+
+          </div>
+          <button class="header-login" type="button">
+            Вход
+          </button>
+          <button class="header-cart" type="button">
+            Пусто
+          </button>
+        </div>
+      </div>
+      <div class="header-info">
+        <p class="working-time">
+          с 10 до 20, ежедневно
+        </p>
+        <a class="phone-number" href="tel:88124502525">
+          8 812 450-25-25
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <section class="slider">
+    <div class="container">
+      <div class="slider__item">
+        <h3 class="slider__item-title">Пломбир с помадкой и клубничный щербет</h3>
+        <button class="slider__item-button" type="button">Давайте оба!</button>
+      </div>
+      <div class="slider__item">
+        <h3 class="slider__item-title">Шоколадный пломбир и лимонный сорбет</h3>
+        <button class="slider__item-button" type="button">Давайте оба!</button>
+      </div>
+      <div class="slider__item">
+        <h3 class="slider__item-title">Крем-брюле и пломбир с малиновым джемом</h3>
+        <button class="slider__item-button" type="button">Давайте оба!</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="promo">
+    <h2 class="promo__title">Промо-акции в Глейси</h2>
+    <div class="container">
+      <div class="promo__item">
+        <h3 class="promo__item-title">
+          Малинка даром!
+        </h3>
+        <p class="promo__item-text">
+          При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
+        </p>
+        <button class="promo__item-button" type="button">
+          Хочу варенье!
+        </button>
+      </div>
+      <div class="promo__item">
+        <h3 class="promo__item-title">
+          Шоколадки даром!
+        </h3>
+        <p class="promo__item-text">
+          При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
+        </p>
+        <button class="promo__item-button" type="button">
+          Хочу шоколадки!
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="popular">
+    <h2 class="popular__title">Мороженое-хиты в Глейси</h2>
+    <div class="container">
+      <div class="popular__item">
+        <img class="popular__item-image" src="https://via.placeholder.com/150x100" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+        <h3 class="popular__item-title">
+          Сливочное с апельсиновым джемом и цитрусовой стружкой
+        </h3>
+        <p class="popular__item-price">
+          <span class="popular__item-number">310 ₽</span>
+          /кг
+        </p>
+      </div>
+      <div class="popular__item">
+        <img class="popular__item-image" src="https://via.placeholder.com/150x100" alt="Сливочно-кофейное с кусочками шоколада">
+        <h3 class="popular__item-title">
+          Сливочно-кофейное с кусочками шоколада
+        </h3>
+        <p class="popular__item-price">
+          <span class="popular__item-number">380 ₽</span>
+          /кг
+        </p>
+      </div>
+      <div class="popular__item">
+        <img class="popular__item-image" src="https://via.placeholder.com/150x100" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+        <h3 class="popular__item-title">
+          Сливочно-клубничное с присыпкой из белого шоколада
+        </h3>
+        <p class="popular__item-price">
+          <span class="popular__item-number">355 ₽</span>
+          /кг
+        </p>
+      </div>
+      <div class="popular__item">
+        <img class="popular__item-image" src="https://via.placeholder.com/150x100" alt="Сливочное крем-брюле с карамельной подливкой">
+        <h3 class="popular__item-title">
+          Сливочное крем-брюле с карамельной подливкой
+        </h3>
+        <p class="popular__item-price">
+          <span class="popular__item-number">415 ₽</span>
+          /кг
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="features">
+    <h2 class="features__title">Преимущества Глейси</h2>
+    <div class="container">
+      <p class="features__descr">
+        Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес
+      </p>
+      <ul class="features__list">
+        <li class="features__item features__item--tech">
+          Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных
+          временем технологий.
+        </li>
+        <li class="features__item features__item--buy">
+          Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает
+          долговременное сотрудничество.
+        </li>
+        <li class="features__item features__item--ingredients">
+          Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты
+          и добавки произведены из натурального, экологически чистого сырья.
+        </li>
+        <li class="features__item features__item--delivery">
+          Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в
+          пути и позволяет сохранить превосходный вкус.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="news">
+    <h2 class="news__title">Новости Глейси</h2>
+    <div class="container">
+      <div class="news__item">
+        <h5 class="news__item-subtitle">Новое в нашем блоге</h5>
+        <h4 class="news__item-title">
+          <a class="news__item-link" href="">10 способов сервировки фруктовых щербетов к столу</a>
+        </h4>
+      </div>
+      <!-- Здесь будет форма рассылки -->
+    </div>
+  </section>
+
+  <section class="map">
+    <h2 class="map__title">Как найти Глейси</h2>
+    <div class="contacts">
+      <p class="address">
+        Адрес главного офиса и офлайн-магазина:
+        <span>ул. Большая Конюшенная, <br>
+              19/8, Санкт-Петербург</span>
+      </p>
+      <p class="phone">
+        Для заказов по телефону:
+        <br>
+        <span>8 812 450-25-25</span>
+        <br>
+        (с 10 до 20 ежедневно)
+      </p>
+      <button class="feedback-popup">
+        Форма обратной связи
+      </button>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="socials">
+        <div class="socials__item socials__item--facebook"></div>
+        <div class="socials__item socials__item--vk"></div>
+        <div class="socials__item socials__item--inst"></div>
+        <div class="socials__item socials__item--twitter"></div>
+      </div>
+      <ul class="footer__info">
+        <li class="footer__info-item footer__info-item--special">
+          <a class="footer__info-link" href="">Для поставщиков</a>
+        </li>
+        <li class="footer__info-item">
+          <a class="footer__info-link" href="">Наши документы</a>
+        </li>
+        <li class="footer__info-item">
+          <a class="footer__info-link" href="">О производстве</a>
+        </li>
+        <li class="footer__info-item">
+          <a class="footer__info-link" href="">Экологические стандарты</a>
+        </li>
+      </ul>
+      <div class="copyright">
+        <img class="copyright__logo" src="https://via.placeholder.com/150x100" alt="Лого HTMl Academy">
+        <p class="copyright__text">
+          Сделано в HTML Academy © 2019
+        </p>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p> -->
+
+</body>
+
 </html>
