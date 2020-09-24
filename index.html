@@ -9,13 +9,13 @@
   <title>HTML Academy: Глейси</title>
 </head>
 
-<body class="page-body" style="background-image: url('')">
+<body class="page-body">
   <header class="header">
     <div class="container">
       <div class="header-top">
         <div class="header-left">
           <div class="header-logo">
-            <img class="header-logo__image" src="img/logo.svg" alt="Лого GllacyShop">
+            <img class="header-logo__image" src="img/logo.svg" alt="Лого GllacyShop" width="154" height="64">
           </div>
           <nav class="menu">
             <ul class="menu__list">
@@ -32,9 +32,9 @@
           </nav>
         </div>
         <div class="header-right">
-          <div class="header-search">
-
-          </div>
+          <a class="header-search" href="">
+            <img class="header-search-icon" src="img/icons/search.png" width="16" height="16" alt="Поиск">
+          </a>
           <a class="header-login" href="">
             Вход
           </a>
@@ -44,10 +44,10 @@
         </div>
       </div>
       <div class="header-info">
-        <p class="working-time">
+        <p class="header-info-time">
           с 10 до 20, ежедневно
         </p>
-        <a class="phone-number" href="tel:88124502525">
+        <a class="header-info-phone" href="tel:88124502525">
           8 812 450-25-25
         </a>
       </div>
@@ -56,19 +56,16 @@
 
   <section class="slider">
     <div class="container">
-      <div class="slider__item">
-        <h3 class="slider__item-title">Пломбир с помадкой и клубничный щербет</h3>
-        <img class="slide__item-image" src="img/right-slide.jpg" alt="">
+      <div class="slider__item slider__item-right">
+        <h3 class="slider__item-title slider__item-right-title">Пломбир с помадкой и клубничный щербет</h3>
         <a class="slider__item-button button" href="">Давайте оба!</a>
       </div>
-      <div class="slider__item">
+      <div class="slider__item slider__item-middle">
         <h3 class="slider__item-title">Шоколадный пломбир и лимонный сорбет</h3>
-        <img class="slide__item-image" src="img/middle-slide.jpg" alt="">
         <a class="slider__item-button button" href="">Давайте оба!</a>
       </div>
-      <div class="slider__item">
+      <div class="slider__item slider__item-left">
         <h3 class="slider__item-title">Крем-брюле и пломбир с малиновым джемом</h3>
-        <img class="slide__item-image" src="img/left-slide.jpg" alt="">
         <a class="slider__item-button button" href="">Давайте оба!</a>
       </div>
     </div>
@@ -76,28 +73,32 @@
 
   <section class="promo">
     <h2 class="promo__title visually-hidden">Промо-акции в Глейси</h2>
-    <div class="container">
-      <div class="promo__item">
+    <div class="container promo-container">
+      <div class="promo__item" style="background-image: url('img/berry-back.png')">
         <h3 class="promo__item-title">
           Малинка даром!
         </h3>
         <p class="promo__item-text">
           При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
         </p>
-        <a class="promo__item-button button" href="">
-          Хочу варенье!
-        </a>
+        <div class="promo__item-bottom">
+          <a class="promo__item-button button" href="">
+            Хочу варенье!
+          </a>
+        </div>
       </div>
-      <div class="promo__item">
+      <div class="promo__item" style="background-image: url('img/choc-back.png')">
         <h3 class="promo__item-title">
           Шоколадки даром!
         </h3>
         <p class="promo__item-text">
           При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
         </p>
-        <a class="promo__item-button button" href="">
-          Хочу шоколадки!
-        </a>
+        <div class="promo__item-bottom">
+          <a class="promo__item-button button" href="">
+            Хочу шоколадки!
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -108,46 +109,40 @@
       <ul class="popular__items">
         <li class="popular__item card">
           <img class="popular__item-image" src="img/popular-1.png"
-            alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+            alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
           <h3 class="popular__item-title">
             <a class="popular__item-link" href="">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
           </h3>
           <p class="popular__item-price">
-            <span class="popular__item-number">310 ₽</span>
-            /кг
+            <span class="popular__item-number">310 ₽</span>/кг
           </p>
         </li>
         <li class="popular__item card">
-          <img class="popular__item-image" src="img/popular-2.png"
-            alt="Сливочно-кофейное с кусочками шоколада">
+          <img class="popular__item-image" src="img/popular-2.png" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
           <h3 class="popular__item-title">
             <a class="popular__item-link" href="">Сливочно-кофейное с кусочками шоколада</a>
           </h3>
           <p class="popular__item-price">
-            <span class="popular__item-number">380 ₽</span>
-            /кг
+            <span class="popular__item-number">380 ₽</span>/кг
           </p>
         </li>
         <li class="popular__item card">
           <img class="popular__item-image" src="img/popular-3.png"
-            alt="Сливочно-клубничное с присыпкой из белого шоколада">
+            alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
           <h3 class="popular__item-title">
             <a class="popular__item-link" href="">Сливочно-клубничное с присыпкой из белого шоколада</a>
           </h3>
           <p class="popular__item-price">
-            <span class="popular__item-number">355 ₽</span>
-            /кг
+            <span class="popular__item-number">355 ₽</span>/кг
           </p>
         </li>
         <li class="popular__item card">
-          <img class="popular__item-image" src="img/popular-4.png"
-            alt="Сливочное крем-брюле с карамельной подливкой ">
+          <img class="popular__item-image" src="img/popular-4.png" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
           <h3 class="popular__item-title">
             <a class="popular__item-link" href="">Сливочное крем-брюле с карамельной подливкой</a>
           </h3>
           <p class="popular__item-price">
-            <span class="popular__item-number">415 ₽</span>
-            /кг
+            <span class="popular__item-number">415 ₽</span>/кг
           </p>
         </li>
       </ul>
@@ -155,63 +150,70 @@
   </section>
 
   <section class="features">
-    <h2 class="features__title visually-hidden">Преимущества Глейси</h2>
+    <h2 class="features__title visually-hidden">
+      Преимущества Глейси
+    </h2>
     <div class="container">
-      <p class="features__descr">
-        Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес
-      </p>
-      <ul class="features__list">
-        <li class="features__item features__item--tech">
-          Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и
-          проверенных
-          временем технологий.
-        </li>
-        <li class="features__item features__item--buy">
-          Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас
-          связывает
-          долговременное сотрудничество.
-        </li>
-        <li class="features__item features__item--ingredients">
-          Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные
-          ингредиенты
-          и добавки произведены из натурального, экологически чистого сырья.
-        </li>
-        <li class="features__item features__item--delivery">
-          Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому
-          растаять в
-          пути и позволяет сохранить превосходный вкус.
-        </li>
-      </ul>
+      <div class="features__inner">
+        <p class="features__descr">
+          Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес
+        </p>
+        <ul class="features__list">
+          <li class="features__item features__item--tech">
+            Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и
+            проверенных временем технологий.
+          </li>
+          <li class="features__item features__item--buy">
+            Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас
+            связывает долговременное сотрудничество.
+          </li>
+          <li class="features__item features__item--ingredients">
+            Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные
+            ингредиенты и добавки произведены из натурального, экологически чистого сырья.
+          </li>
+          <li class="features__item features__item--delivery">
+            Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому
+            растаять в пути и позволяет сохранить превосходный вкус.
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
 
   <section class="news">
     <h2 class="news__title visually-hidden">Новости Глейси</h2>
-    <div class="container">
-      <div class="news__item">
+    <div class="container news-container">
+      <div class="news__item" style="background-image: url('img/news-back.png');">
         <h5 class="news__item-subtitle">Новое в нашем блоге</h5>
         <h4 class="news__item-title">
           <a class="news__item-link" href="">10 способов сервировки фруктовых щербетов к столу</a>
         </h4>
       </div>
-      <div class="news__mailing">
-        <p class="news__mailing-text">
-          Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не
-          спамить и не слать всякой ненужной ерунды. Честно =)
-        </p>
-        <!-- Здесь будет форма рассылки -->
+      <div class="news__mailing" style="background-image: url('img/mail-back.png');">
+        <div class="news__mailing-inner">
+          <p class="news__mailing-text">
+            Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит.
+            Обещаем не
+            спамить и не слать всякой ненужной ерунды. Честно =)
+          </p>
+          <div class="news__mailing-bottom">
+            <!-- Здесь будет форма рассылки -->
+            <button class="news__mailing-button button">
+              Отправить
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <section class="map">
     <h2 class="map__title visually-hidden">Как найти Глейси</h2>
-    <img class="map__image" src="https://via.placeholder.com/150x100" alt="Местоположение Gllacy на карте" height="">
-    <div class="container">
+    <div class="container map-container">
       <div class="contacts">
         <p class="contacts-address">
           Адрес главного офиса <br>
-           и офлайн-магазина: <br>
+          и офлайн-магазина: <br>
           <span>ул. Большая Конюшенная, <br>
             19/8, Санкт-Петербург</span>
         </p>
@@ -230,7 +232,7 @@
   </section>
 
   <footer class="footer">
-    <div class="container">
+    <div class="container footer-container">
       <ul class="socials">
         <li class="socials__item socials__item--facebook">
           <a class="socials__item-link" href="">Facebook</a>
@@ -261,7 +263,7 @@
       </ul>
       <div class="copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss">
-          <img class="copyright__logo" src="img/html-logo.png" alt="Лого HTMl Academy">
+          <img class="copyright__logo" src="img/html-logo.png" alt="Лого HTMl Academy" width="108" height="39">
         </a>
         <p class="copyright__text">
           Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019
