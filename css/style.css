@@ -610,6 +610,7 @@ body {
   column-gap: 32px;
   padding: 0;
   padding-left: 76px;
+  padding-top: 14px;
 }
 
 .footer__info-item--special {
