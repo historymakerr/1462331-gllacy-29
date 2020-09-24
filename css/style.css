@@ -247,7 +247,6 @@ body {
 
 .slider__item {
   font-weight: 700;
-  border: 1px solid red;
   padding-top: 275px;
   text-align: center;
 }
@@ -286,7 +285,6 @@ body {
 }
 
 .promo__item {
-  border: 1px solid red;
   font-size: 18px;
   font-weight: 700;
   line-height: 22px;
@@ -318,7 +316,6 @@ body {
 
 .popular__items {
   list-style: none;
-  border: 1px solid red;
   padding: 0;
   margin: 0;
   margin-bottom: 40px;
@@ -366,7 +363,6 @@ body {
 .features {
   margin-bottom: 40px;
   color: var(--dark-grey);
-  border: 1px solid red;
 }
 
 .features__inner {
@@ -426,7 +422,6 @@ body {
 }
 
 .news {
-  border: 1px solid red;
   margin-bottom: 40px;
 }
 
