@@ -56,15 +56,22 @@ a:hover, a-active {
   border-bottom: var(--link-border-hover);
 }
 
+.page-body {
+  background-color: var(--right-slide-back);
+  background-image: url("../img/slider-back-right.png");
+  background-repeat: no-repeat;
+  background-position: center 0;
+}
+
+.catalog-body {
+  background-color: var(--left-slide-back);
+}
+
 body {
   font-family: Roboto;
   font-size: 16px;
   line-height: 22px;
   color: var(--accent);
-  background-color: var(--right-slide-back);
-  background-image: url("../img/slider-back-right.png");
-  background-repeat: no-repeat;
-  background-position: center 0;
 }
 
 .visually-hidden {
@@ -84,6 +91,7 @@ body {
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
+  color: var(--accent);
   text-shadow: 0px 2px 5px var(--text-shadow);
   background: var(--button-gradient);
   box-shadow: var(--button-shadow);
@@ -100,9 +108,61 @@ body {
   box-shadow: var(--button-active-shadow);
 }
 
+.card {
+  border-radius: 4px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  transition: .15s linear all;
+}
+
 .card:hover {
   background-color: var(--white-with-opacity);
   box-shadow: var(--card-shadow);
+  padding-bottom: 21px;
+}
+
+.card:hover .card-button {
+  display: block;
+}
+
+.card:hover .card-title {
+  margin-bottom: 11px;
+}
+
+.card-link {
+  display: inline;
+}
+
+.card-title {
+  font-weight: 500;
+  flex-grow: 1;
+  margin: 0;
+  font-size: 16px;
+  margin-top: 12px;
+}
+
+.card-price {
+  font-size: 30px;
+  line-height: 35px;
+  font-weight: 700;
+  position: absolute;
+  margin: 0;
+  top: 209px;
+  left: 0;
+}
+
+.card-number {
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.card-button {
+  display: none;
+  padding: 12px 16px;
+  border-radius: 50px;
 }
 
 .header {
@@ -206,7 +266,11 @@ body {
   font-size: 22px;
   line-height: 24px;
   font-weight: 700;
-  border: none;
+  border-bottom: 1px solid transparent;
+}
+
+.header-info-phone:hover {
+  border-color: var(--link-hover);
 }
 
 .menu__list {
@@ -218,7 +282,14 @@ body {
 }
 
 .menu__list-item {
-  padding-right: 32px;
+  padding: 9px 13px 11px;
+  border-radius: 26px;
+  margin-right: 6px;
+}
+
+.menu__list-link {
+  font-size: 16px;
+  font-weight: 700;
 }
 
 .menu__list-info {
@@ -226,7 +297,11 @@ body {
   line-height: 16px;
 }
 
-.menu__list-link:hover {
+.menu__list-item:hover {
+  background-color: var(--accent);
+}
+
+.menu__list-item:hover .menu__list-link {
   color: var(--dark-grey);
   border: none;
   background-color: var(--accent);
@@ -322,42 +397,6 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 26px;
-}
-
-.popular__item {
-  border-radius: 4px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  transition: .15s linear all;
-}
-
-.popular__item-link {
-  display: inline;
-}
-
-.popular__item-title {
-  font-weight: 500;
-  flex-grow: 1;
-  margin: 0;
-  font-size: 16px;
-  margin-top: 12px;
-}
-
-.popular__item-price {
-  font-size: 30px;
-  line-height: 35px;
-  font-weight: 700;
-  position: absolute;
-  margin: 0;
-  top: 209px;
-  left: 0;
-}
-
-.popular__item-number {
-  font-size: 45px;
-  line-height: 45px;
 }
 
 .features {
@@ -564,8 +603,8 @@ body {
 }
 
 .footer-container {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
 }
 
 .socials {
@@ -607,13 +646,17 @@ body {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   padding: 0;
   padding-top: 14px;
-  max-width: 330px;
+  justify-self: center;
+  width: 330px;
+  max-height: 50px;
 }
 
 .footer__info-item {
-  flex-basis: 50%;
+  height: 50%;
+  margin-right: 7px;
 }
 
 .footer__info-item--special {
@@ -635,6 +678,10 @@ body {
   display: inline;
 }
 
+.copyright {
+  justify-self: end;
+}
+
 .copyright__link {
   border: none;
 }
@@ -646,14 +693,51 @@ body {
 }
 
 /* Catalog */
+.header-logo__link {
+  border: none;
+}
+
+.header-logo__link:hover {
+  border: none;
+}
+
 .breadcrumbs-link {
   font-size: 14px;
   line-height: 16px;
+  margin-right: 25px;
 }
 
 .catalog__title {
   font-size: 35px;
   line-height: 41px;
+  margin: 0;
+  margin-bottom: 29px;
+}
+
+.catalog__list {
+  display: grid;
+  padding: 0;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 26px;
+  margin-bottom: 23px;
+}
+
+.catalog__card {
+  margin-bottom: 43px;
+}
+
+.switcher {
+  text-align: right;
+  margin-bottom: 30px;
+}
+
+.switcher-page {
+  padding: 5px 8px 8px;
+  border-radius: 50%;
+  line-height: 18px;
+  border: none;
+  width: 26px;
+  height: 26px;
 }
 
 .switcher-page--active, .switcher-page:active {

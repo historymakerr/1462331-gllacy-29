@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,8 @@
    <link href="css/style.css" rel="stylesheet">
    <title>HTML Academy: Глейси - каталог</title>
 </head>
-<body>
+
+<body class="catalog-body">
    <header class="header">
       <div class="container">
          <div class="header-top">
@@ -34,7 +36,7 @@
             </div>
             <div class="header-right">
                <div class="header-search">
-   
+
                </div>
                <a class="header-login" href="">
                   Вход
@@ -45,10 +47,10 @@
             </div>
          </div>
          <div class="header-info">
-            <p class="working-time">
+            <p class="header-info-time">
                с 10 до 20, ежедневно
             </p>
-            <a class="phone-number" href="tel:88124502525">
+            <a class="header-info-phone" href="tel:88124502525">
                8 812 450-25-25
             </a>
          </div>
@@ -74,124 +76,172 @@
          <!-- Здесь будет фильтр -->
          <ul class="catalog__list">
             <li class="catalog__card card">
-               <img class="catalog__card-image" src="img/popular-1.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-               <div class="catalog__card-price">
-                  <span class="catalog__card-number">310 ₽</span>
+               <img class="catalog__card-image card-image" src="img/popular-1.png"
+                  alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+               <p class="catalog__card-price card-price">
+                  <span class="catalog__card-number card-number">310 ₽</span>
                   /кг
-               </div>
-               <h2 class="catalog__card-title">
-                  <a class="catalog__card-link" href="">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+               </p>
+               <h2 class="catalog__card-title card-title">
+                  <a class="catalog__card-link card-link" href="">Сливочное с апельсиновым джемом и цитрусовой
+                     стружкой</a>
                </h2>
+               <button class="card-button button">
+                  Быстрый просмотр
+               </button>
             </li>
             <li class="catalog__card card">
-               <img class="catalog__card-image" src="img/popular-2.png" alt="Сливочно-кофейное с кусочками шоколада">
-               <div class="catalog__card-price">
-                  <span class="catalog__card-number">380 ₽</span>
+               <img class="catalog__card-image card-image" src="img/popular-2.png"
+                  alt="Сливочно-кофейное с кусочками шоколада">
+               <p class="catalog__card-price card-price">
+                  <span class="catalog__card-number card-number">380 ₽</span>
                   /кг
-               </div>
-               <h2 class="catalog__card-title">
-                  <a class="catalog__card-link" href="">Сливочно-кофейное с кусочками шоколада</a>
+               </p>
+               <h2 class="catalog__card-title card-title">
+                  <a class="catalog__card-link card-link" href="">Сливочно-кофейное с кусочками шоколада</a>
                </h2>
+               <button class="card-button button">
+                  Быстрый просмотр
+               </button>
             </li>
             <li class="catalog__card card">
-               <img class="catalog__card-image" src="img/popular-3.png" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-               <div class="catalog__card-price">
-                  <span class="catalog__card-number">355 ₽</span>
+               <img class="catalog__card-image card-image" src="img/popular-3.png"
+                  alt="Сливочно-клубничное с присыпкой из белого шоколада">
+               <p class="catalog__card-price card-price">
+                  <span class="catalog__card-number card-number">355 ₽</span>
                   /кг
-               </div>
-               <h2 class="catalog__card-title">
-                  <a class="catalog__card-link" href="">Сливочно-клубничное с присыпкой из белого шоколада</a>
+               </p>
+               <h2 class="catalog__card-title card-title">
+                  <a class="catalog__card-link card-link" href="">Сливочно-клубничное с присыпкой из белого шоколада</a>
                </h2>
+               <button class="card-button button">
+                  Быстрый просмотр
+               </button>
             </li>
             <li class="catalog__card card">
-               <img class="catalog__card-image" src="img/popular-4.png" alt="Сливочное крем-брюле с карамельной подливкой">
-               <div class="catalog__card-price">
-                  <span class="catalog__card-number">415 ₽</span>
+               <img class="catalog__card-image card-image" src="img/popular-4.png"
+                  alt="Сливочное крем-брюле с карамельной подливкой">
+               <p class="catalog__card-price card-price">
+                  <span class="catalog__card-number card-number">415 ₽</span>
                   /кг
-               </div>
-               <h2 class="catalog__card-title">
-                  <a class="catalog__card-link" href="">Сливочное крем-брюле с карамельной подливкой</a>
+               </p>
+               <h2 class="catalog__card-title card-title">
+                  <a class="catalog__card-link card-link" href="">Сливочное крем-брюле с карамельной подливкой</a>
                </h2>
+               <button class="card-button button">
+                  Быстрый просмотр
+               </button>
             </li>
             <li class="catalog__card card">
-               <img class="catalog__card-image" src="img/cream-cranberry.png" alt="Сливочное с брусничным джемом">
-               <div class="catalog__card-price">
-                  <span class="catalog__card-number">325 ₽</span>
+               <img class="catalog__card-image card-image" src="img/cream-cranberry.png"
+                  alt="Сливочное с брусничным джемом">
+               <p class="catalog__card-price card-price">
+                  <span class="catalog__card-number card-number">325 ₽</span>
                   /кг
-               </div>
-               <h2 class="catalog__card-title">
-                  <a class="catalog__card-link" href="">Сливочное с брусничным джемом</a>
+               </p>
+               <h2 class="catalog__card-title card-title">
+                  <a class="catalog__card-link card-link" href="">Сливочное с брусничным джемом</a>
                </h2>
+               <button class="card-button button">
+                  Быстрый просмотр
+               </button>
             </li>
             <li class="catalog__card card">
-               <img class="catalog__card-image" src="img/cream-blackberry.png" alt="Сливочно-черничное с цельными ягодами черники">
-               <div class="catalog__card-price">
-                  <span class="catalog__card-number">410 ₽</span>
+               <img class="catalog__card-image card-image" src="img/cream-blackberry.png"
+                  alt="Сливочно-черничное с цельными ягодами черники">
+               <p class="catalog__card-price card-price">
+                  <span class="catalog__card-number card-number">410 ₽</span>
                   /кг
-               </div>
-               <h2 class="catalog__card-title">
-                  <a class="catalog__card-link" href="">Сливочно-черничное с цельными ягодами черники</a>
+               </p>
+               <h2 class="catalog__card-title card-title">
+                  <a class="catalog__card-link card-link" href="">Сливочно-черничное с цельными ягодами черники</a>
                </h2>
+               <button class="card-button button">
+                  Быстрый просмотр
+               </button>
             </li>
             <li class="catalog__card card">
-               <img class="catalog__card-image" src="img/cream-lemon.png" alt="Сливочно-лимонное с карамельной присыпкой">
-               <div class="catalog__card-price">
-                  <span class="catalog__card-number">315 ₽</span>
+               <img class="catalog__card-image card-image" src="img/cream-lemon.png"
+                  alt="Сливочно-лимонное с карамельной присыпкой">
+               <p class="catalog__card-price card-price">
+                  <span class="catalog__card-number card-number">315 ₽</span>
                   /кг
-               </div>
-               <h2 class="catalog__card-title">
-                  <a class="catalog__card-link" href="">Сливочно-лимонное с карамельной присыпкой</a>
+               </p>
+               <h2 class="catalog__card-title card-title">
+                  <a class="catalog__card-link card-link" href="">Сливочно-лимонное с карамельной присыпкой</a>
                </h2>
+               <button class="card-button button">
+                  Быстрый просмотр
+               </button>
             </li>
             <li class="catalog__card card">
-               <img class="catalog__card-image" src="img/cream-chocolate.png" alt="Сливочное с шоколадной стружкой">
-               <div class="catalog__card-price">
-                  <span class="catalog__card-number">320 ₽</span>
+               <img class="catalog__card-image card-image" src="img/cream-chocolate.png"
+                  alt="Сливочное с шоколадной стружкой">
+               <p class="catalog__card-price card-price">
+                  <span class="catalog__card-number card-number">320 ₽</span>
                   /кг
-               </div>
-               <h2 class="catalog__card-title">
-                  <a class="catalog__card-link" href="">Сливочное с шоколадной стружкой</a>
+               </p>
+               <h2 class="catalog__card-title card-title">
+                  <a class="catalog__card-link card-link" href="">Сливочное с шоколадной стружкой</a>
                </h2>
+               <button class="card-button button">
+                  Быстрый просмотр
+               </button>
             </li>
             <li class="catalog__card card">
-               <img class="catalog__card-image" src="img/cream-vanila.png" alt="Сливочно-ванильное с кусочками шоколада">
-               <div class="catalog__card-price">
-                  <span class="catalog__card-number">440 ₽</span>
+               <img class="catalog__card-image card-image" src="img/cream-vanila.png"
+                  alt="Сливочно-ванильное с кусочками шоколада">
+               <p class="catalog__card-price card-price">
+                  <span class="catalog__card-number card-number">440 ₽</span>
                   /кг
-               </div>
-               <h2 class="catalog__card-title">
-                  <a class="catalog__card-link" href="">Сливочно-ванильное с кусочками шоколада</a>
+               </p>
+               <h2 class="catalog__card-title card-title">
+                  <a class="catalog__card-link card-link" href="">Сливочно-ванильное с кусочками шоколада</a>
                </h2>
+               <button class="card-button button">
+                  Быстрый просмотр
+               </button>
             </li>
             <li class="catalog__card card">
-               <img class="catalog__card-image" src="img/cream-menthol.png" alt="Сливочноe с ментоловым сиропом">
-               <div class="catalog__card-price">
-                  <span class="catalog__card-number">435 ₽</span>
+               <img class="catalog__card-image card-image" src="img/cream-menthol.png"
+                  alt="Сливочноe с ментоловым сиропом">
+               <p class="catalog__card-price card-price">
+                  <span class="catalog__card-number card-number">435 ₽</span>
                   /кг
-               </div>
-               <h2 class="catalog__card-title">
-                  <a class="catalog__card-link" href="">Сливочноe с ментоловым сиропом</a>
+               </p>
+               <h2 class="catalog__card-title card-title">
+                  <a class="catalog__card-link card-link" href="">Сливочноe с ментоловым сиропом</a>
                </h2>
+               <button class="card-button button">
+                  Быстрый просмотр
+               </button>
             </li>
             <li class="catalog__card card">
-               <img class="catalog__card-image" src="img/cream-black-chocolate.png" alt="Сливочное с кусочками черного шоколада">
-               <div class="catalog__card-price">
-                  <span class="catalog__card-number">355 ₽</span>
+               <img class="catalog__card-image card-image" src="img/cream-black-chocolate.png"
+                  alt="Сливочное с кусочками черного шоколада">
+               <p class="catalog__card-price card-price">
+                  <span class="catalog__card-number card-number">355 ₽</span>
                   /кг
-               </div>
-               <h2 class="catalog__card-title">
-                  <a class="catalog__card-link" href="">Сливочное с кусочками черного шоколада</a>
+               </p>
+               <h2 class="catalog__card-title card-title">
+                  <a class="catalog__card-link card-link" href="">Сливочное с кусочками черного шоколада</a>
                </h2>
+               <button class="card-button button">
+                  Быстрый просмотр
+               </button>
             </li>
             <li class="catalog__card card">
-               <img class="catalog__card-image" src="img/cream-mint.png" alt="Сливочное с мятным сиропом">
-               <div class="catalog__card-price">
-                  <span class="catalog__card-number">420 ₽</span>
+               <img class="catalog__card-image card-image" src="img/cream-mint.png" alt="Сливочное с мятным сиропом">
+               <p class="catalog__card-price card-price">
+                  <span class="catalog__card-number card-number">420 ₽</span>
                   /кг
-               </div>
-               <h2 class="catalog__card-title">
-                  <a class="catalog__card-link" href="">Сливочное с мятным сиропом</a>
+               </p>
+               <h2 class="catalog__card-title card-title">
+                  <a class="catalog__card-link card-link" href="">Сливочное с мятным сиропом</a>
                </h2>
+               <button class="card-button button">
+                  Быстрый просмотр
+               </button>
             </li>
          </ul>
          <div class="switcher">
@@ -207,7 +257,7 @@
    </div>
 
    <footer class="footer">
-      <div class="container">
+      <div class="container footer-container">
          <ul class="socials">
             <li class="socials__item socials__item--facebook">
                <a class="socials__item-link" href="">Facebook</a>
@@ -247,4 +297,5 @@
       </div>
    </footer>
 </body>
+
 </html>
