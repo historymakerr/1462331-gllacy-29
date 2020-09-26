@@ -686,6 +686,10 @@ body {
   border: none;
 }
 
+.copyright__link:hover {
+  border: none;
+}
+
 .copyright__text {
   font-size: 12px;
   margin: 0;
