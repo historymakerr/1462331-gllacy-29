@@ -9,7 +9,7 @@
   <title>HTML Academy: Глейси</title>
 </head>
 
-<body class="page-body">
+<body class="page-body page-body-3">
   <header class="header">
     <div class="container">
       <div class="header-top">
@@ -19,8 +19,25 @@
           </div>
           <nav class="menu">
             <ul class="menu__list">
-              <li class="menu__list-item">
+              <li class="menu__list-item menu__list-item--active menu__list-item-catalog">
                 <a class="menu__list-link" href="catalog.html">Каталог</a>
+                <ul class="menu__list-popup">
+                  <li class="menu__list-popup-item menu__list-popup-item-new">
+                    <a href="" class="menu__list-popup-link menu__list-popup-link-new">Новинки</a>
+                  </li>
+                  <li class="menu__list-popup-item menu__list-popup-item--active">
+                    <a href="" class="menu__list-popup-link">Сливочное</a>
+                  </li>
+                  <li class="menu__list-popup-item">
+                    <a href="" class="menu__list-popup-link">Щербеты</a>
+                  </li>
+                  <li class="menu__list-popup-item">
+                    <a href="" class="menu__list-popup-link">Фруктовый лед</a>
+                  </li>
+                  <li class="menu__list-popup-item">
+                    <a href="" class="menu__list-popup-link">Мелорин</a>
+                  </li>
+                </ul>
               </li>
               <li class="menu__list-item">
                 <a class="menu__list-link" href="">Доставка и оплата</a>
@@ -32,15 +49,92 @@
           </nav>
         </div>
         <div class="header-right">
-          <a class="header-search" href="">
-            <img class="header-search-icon" src="img/icons/search.png" width="16" height="16" alt="Поиск">
-          </a>
-          <a class="header-login" href="">
-            Вход
-          </a>
-          <a class="header-cart" href="">
-            Пусто
-          </a>
+          <div class="header-search-box">
+            <a class="header-search" href="">
+              <svg class="header-search__icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16 14.6652L11.0785 9.73294C11.9827 8.48188 12.3826 6.93501 12.1984 5.40134C12.0141 3.86767 11.2594 2.4601 10.0848 1.45982C8.91022 0.45954 7.40233 -0.0598191 5.86234 0.00548954C4.32234 0.0707982 2.86363 0.715967 1.77757 1.81212C0.691516 2.90827 0.0580813 4.3747 0.0038002 5.91849C-0.050481 7.46228 0.478388 8.96976 1.48476 10.1398C2.49113 11.3098 3.90092 12.0563 5.43251 12.2301C6.96409 12.4039 8.50472 11.9922 9.74663 11.0772L14.6586 16L16 14.6652ZM6.08152 10.3767C5.24079 10.3767 4.41895 10.1268 3.71991 9.65874C3.02087 9.19063 2.47604 8.5253 2.15431 7.74687C1.83258 6.96844 1.7484 6.11188 1.91241 5.28551C2.07643 4.45913 2.48128 3.70006 3.07576 3.10427C3.67024 2.50849 4.42766 2.10276 5.25223 1.93838C6.0768 1.77401 6.93149 1.85837 7.70822 2.1808C8.48495 2.50324 9.14883 3.04927 9.61591 3.74983C10.083 4.4504 10.3323 5.27404 10.3323 6.11661C10.3298 7.24568 9.88115 8.3278 9.08451 9.12618C8.28788 9.92456 7.20813 10.3742 6.08152 10.3767Z"
+                  fill="white" />
+              </svg>
+
+            </a>
+            <div class="header-search-popup">
+              <form class="header-search-popup-form" action="https://echo.htmlacademy.ru" method="post">
+                <input class="input header-search-popup-input" type="text" placeholder="Крем-брюле">
+              </form>
+            </div>
+          </div>
+          <div class="header-login-box" href="">
+            <a class="header-login" href="">
+              <svg class="header-login__icon" width="20" height="19" viewBox="0 0 20 19" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.04 14.88L12.96 9.5L6.04 4.13V7.04H0V11.96H6.04V14.88Z" fill="white" />
+                <path
+                  d="M18 0H5C4.46957 0 3.96086 0.210714 3.58579 0.585786C3.21071 0.960859 3 1.46957 3 2V4H5V2H18V17H5V15H3V17C3 17.5304 3.21071 18.0391 3.58579 18.4142C3.96086 18.7893 4.46957 19 5 19H18C18.5304 19 19.0391 18.7893 19.4142 18.4142C19.7893 18.0391 20 17.5304 20 17V2C20 1.46957 19.7893 0.960859 19.4142 0.585786C19.0391 0.210714 18.5304 0 18 0Z"
+                  fill="white" />
+              </svg>
+              Вход</a>
+            <div class="header-login-popup">
+              <form class="header-login-popup__form" action="https://echo.htmlacademy.r" method="post">
+                <input class="input header-login-popup__input" type="text" placeholder="email@example.com">
+                <input class="input header-login-popup__input" type="text" placeholder="......">
+                <button class="button header-login-popup__button">Войти</button>
+                <div class="header-login-popup__help">
+                  <a class="header-login-popup__link" href="">Забыли пароль?</a>
+                  <a class="header-login-popup__link" href="">Новая регистрация</a>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="header-cart-box">
+            <a class="header-cart header-cart--filled" href="">
+              Пусто
+            </a>
+            <div class="header-cart__popup">
+              <div class="header-cart__popup-inner">
+                <ul class="header-cart__popup-items">
+                  <li class="header-cart__popup-item">
+                    <button class="header-cart__popup-item-button"></button>
+                    <img class="header-cart__popup-item-icon" src="img/icons/cart-icon-1.png" alt="" width="33"
+                      height="33">
+                    <h3 class="header-cart__popup-item-title">
+                      Пломбир с апельсиновым джемом
+                    </h3>
+                    <p class="header-cart__popup-item-calc">
+                      1,5 кг х
+                      <span>200 руб.</span>
+                    </p>
+                    <p class="header-cart__popup-item-cost">
+                      300 руб.
+                    </p>
+                  </li>
+                  <li class="header-cart__popup-item">
+                    <button class="header-cart__popup-item-button"></button>
+                    <img class="header-cart__popup-item-icon" src="img/icons/cart-icon-2.png" alt="" width="33"
+                      height="33">
+                    <h3 class="header-cart__popup-item-title">
+                      Клубничный пломбир с присыпкой из белого шоколада
+                    </h3>
+                    <p class="header-cart__popup-item-calc">
+                      1,5 кг х
+                      <span>300 руб.</span>
+                    </p>
+                    <p class="header-cart__popup-item-cost">
+                      450 руб.
+                    </p>
+                  </li>
+                </ul>
+                <p class="header-cart__popup-total">
+                  Итого: <span>750 руб.</span>
+                </p>
+                <button class="button header-cart__popup-button">
+                  Оформить заказ
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="header-info">
@@ -55,7 +149,7 @@
   </header>
 
   <section class="slider">
-    <div class="container">
+    <div class="container slider-container">
       <div class="slider__item slider__item-right">
         <h3 class="slider__item-title slider__item-right-title">Пломбир с помадкой и клубничный щербет</h3>
         <a class="slider__item-button button" href="">Давайте оба!</a>
@@ -67,6 +161,11 @@
       <div class="slider__item slider__item-left">
         <h3 class="slider__item-title">Крем-брюле и пломбир с малиновым джемом</h3>
         <a class="slider__item-button button" href="">Давайте оба!</a>
+      </div>
+      <div class="slider__switchers">
+        <div class="slider__switcher slider__switcher--active"></div>
+        <div class="slider__switcher"></div>
+        <div class="slider__switcher"></div>
       </div>
     </div>
   </section>
@@ -120,7 +219,8 @@
           </button>
         </li>
         <li class="popular__item card">
-          <img class="popular__item-image card-image" src="img/popular-2.png" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
+          <img class="popular__item-image card-image" src="img/popular-2.png"
+            alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
           <h3 class="popular__item-title card-title">
             <a class="popular__item-link card-link" href="">Сливочно-кофейное с кусочками шоколада</a>
           </h3>
@@ -145,7 +245,8 @@
           </button>
         </li>
         <li class="popular__item card">
-          <img class="popular__item-image card-image" src="img/popular-4.png" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
+          <img class="popular__item-image card-image" src="img/popular-4.png"
+            alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
           <h3 class="popular__item-title card-title">
             <a class="popular__item-link card-link" href="">Сливочное крем-брюле с карамельной подливкой</a>
           </h3>
@@ -208,8 +309,10 @@
             спамить и не слать всякой ненужной ерунды. Честно =)
           </p>
           <div class="news__mailing-bottom">
-            <!-- Здесь будет форма рассылки -->
-            <button class="news__mailing-button button">
+            <form class="news__form" action="https://echo.htmlacademy.ru" method="post">
+              <input class="input news__form-input" type="text" placeholder="email@example.com">
+            </form>
+            <button class="news__mailing-button button" type="submit">
               Отправить
             </button>
           </div>
@@ -283,6 +386,19 @@
     </div>
   </footer>
 
+
+  <section class="news__popup">
+    <form class="news__popup-form" action="https://echo.htmlacademy.ru" method="POST">
+      <p class="news__popup-text">
+        Мы обязательно вам ответим!
+      </p>
+      <button class="news__popup-cross">Закрыть</button>
+      <input class="input news__popup-input" type="text" placeholder="Имя Фамилия">
+      <input class="input news__popup-input" type="text" placeholder="email@example.com">
+      <textarea class="news__popup-textarea textarea" name="" placeholder="В свободной форме"></textarea>
+      <button class="button news__popup-button" type="submit">Отправить</button>
+    </form>
+  </section>
 
 
 
