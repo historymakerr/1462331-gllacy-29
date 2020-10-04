@@ -132,7 +132,7 @@ body {
 
 .card {
   z-index: 1100;
-  border-radius: 4px;
+  border-radius: 4px 4px 0 0;
   text-align: center;
   display: flex;
   align-items: center;
@@ -141,19 +141,8 @@ body {
   transition: .15s linear background-color;
 }
 
-.card:hover {
-  background-color: var(--white-with-opacity);
-  box-shadow: var(--card-shadow);
-  padding-bottom: 21px;
-  margin-bottom: -80px;
-}
-
-.card:hover .card-button {
+.card:hover .card-button-box {
   display: block;
-}
-
-.card:hover .card-title {
-  margin-bottom: 11px;
 }
 
 .card-link {
@@ -184,10 +173,26 @@ body {
 }
 
 .card-button {
-  display: none;
+  width: 200px;
+  position: absolute;
+  left: calc((100% - 200px)/2);
+  bottom: 21px;
   padding: 12px 16px;
   border-radius: 50px;
   cursor: pointer;
+  z-index: 129391239;
+}
+
+.card-button-box {
+  z-index: -1;
+  width: 100%;
+  height: calc(100% + 77px);
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--white-with-opacity);
+  box-shadow: var(--card-shadow);
 }
 
 .input, .textarea {
@@ -1053,6 +1058,7 @@ body {
   border: none;
   padding: 13px 28px;
   border-radius: 70px;
+  cursor: pointer;
 }
 
 .footer {
