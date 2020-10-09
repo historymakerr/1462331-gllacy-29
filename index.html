@@ -61,7 +61,8 @@
             </a>
             <div class="header-search-popup">
               <form class="header-search-popup-form" action="https://echo.htmlacademy.ru" method="post">
-                <input class="input header-search-popup-input" type="text" placeholder="Крем-брюле">
+                <label class="visually-hidden" for="search">Поиск</label>
+                <input class="input header-search-popup-input" type="text" placeholder="Крем-брюле" id="search">
               </form>
             </div>
           </div>
@@ -74,12 +75,15 @@
                   d="M18 0H5C4.46957 0 3.96086 0.210714 3.58579 0.585786C3.21071 0.960859 3 1.46957 3 2V4H5V2H18V17H5V15H3V17C3 17.5304 3.21071 18.0391 3.58579 18.4142C3.96086 18.7893 4.46957 19 5 19H18C18.5304 19 19.0391 18.7893 19.4142 18.4142C19.7893 18.0391 20 17.5304 20 17V2C20 1.46957 19.7893 0.960859 19.4142 0.585786C19.0391 0.210714 18.5304 0 18 0Z"
                   fill="white" />
               </svg>
-              Вход</a>
+              Вход
+            </a>
             <div class="header-login-popup">
               <form class="header-login-popup__form" action="https://echo.htmlacademy.r" method="post">
-                <input class="input header-login-popup__input" type="text" placeholder="email@example.com">
-                <input class="input header-login-popup__input" type="text" placeholder="......">
-                <button class="button header-login-popup__button">Войти</button>
+                <label class="visually-hidden" for="email">Логин</label>
+                <input class="input header-login-popup__input" type="email" placeholder="email@example.com" id="email">
+                <label class="visually-hidden" for="password">Пароль</label>
+                <input class="input header-login-popup__input" type="password" placeholder="......" id="password">
+                <button class="button header-login-popup__button" type="button" aria-label="Войти на сайт">Войти</button>
                 <div class="header-login-popup__help">
                   <a class="header-login-popup__link" href="">Забыли пароль?</a>
                   <a class="header-login-popup__link" href="">Новая регистрация</a>
@@ -96,7 +100,7 @@
               <div class="header-cart__popup-inner">
                 <ul class="header-cart__popup-items">
                   <li class="header-cart__popup-item">
-                    <button class="header-cart__popup-item-button"></button>
+                    <button class="header-cart__popup-item-button" type="button" aria-label="Закрыть"></button>
                     <img class="header-cart__popup-item-icon" src="img/icons/cart-icon-1.png"
                       alt="Пломбир с апельсиновым джемом" width="33" height="33">
                     <h3 class="header-cart__popup-item-title">
@@ -111,7 +115,7 @@
                     </p>
                   </li>
                   <li class="header-cart__popup-item">
-                    <button class="header-cart__popup-item-button"></button>
+                    <button class="header-cart__popup-item-button" aria-label="Закрыть"></button>
                     <img class="header-cart__popup-item-icon" src="img/icons/cart-icon-2.png"
                       alt="Клубничный пломбир с присыпкой из белого шоколада" width="33" height="33">
                     <h3 class="header-cart__popup-item-title">
@@ -129,7 +133,7 @@
                 <p class="header-cart__popup-total">
                   Итого: <span>750 руб.</span>
                 </p>
-                <button class="button header-cart__popup-button">
+                <button class="button header-cart__popup-button" type="button" aria-label="Оформить заказ">
                   Оформить заказ
                 </button>
               </div>
@@ -163,9 +167,9 @@
         <a class="slider__item-button button" href="">Давайте оба!</a>
       </div>
       <div class="slider__switchers">
-        <div class="slider__switcher slider__switcher--active"></div>
-        <div class="slider__switcher"></div>
-        <div class="slider__switcher"></div>
+        <button class="slider__switcher slider__switcher--active" type="button" aria-label="Первый слайд"></button>
+        <button class="slider__switcher" type="button" aria-label="Второй слайд"></button>
+        <button class="slider__switcher" type="button" aria-label="Третий слайд"></button>
       </div>
     </div>
   </section>
@@ -207,7 +211,7 @@
       <ul class="popular__items">
         <li class="popular__item card">
           <img class="popular__item-image card-image" src="img/popular-1.png"
-            alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
+            alt="" width="267" height="267">
           <h3 class="popular__item-title card-title">
             <a class="popular__item-link card-link" href="">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
           </h3>
@@ -215,14 +219,14 @@
             <span class="popular__item-number card-number">310 ₽</span>/кг
           </p>
           <div class="card-button-box">
-            <a class="card-button button">
+            <a class="card-button button" aria-label="Просмотреть Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">
               Быстрый просмотр
             </a>
           </div>
         </li>
         <li class="popular__item card">
           <img class="popular__item-image card-image" src="img/popular-2.png"
-            alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
+            alt="" width="267" height="267">
           <h3 class="popular__item-title card-title">
             <a class="popular__item-link card-link" href="">Сливочно-кофейное с кусочками шоколада</a>
           </h3>
@@ -230,14 +234,14 @@
             <span class="popular__item-number card-number">380 ₽</span>/кг
           </p>
           <div class="card-button-box">
-            <a class="card-button button">
+            <a class="card-button button" aria-label="Просмотреть Сливочно-кофейное мороженое с кусочками шоколада">
               Быстрый просмотр
             </a>
           </div>
         </li>
         <li class="popular__item card">
           <img class="popular__item-image card-image" src="img/popular-3.png"
-            alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
+            alt="" width="267" height="267">
           <h3 class="popular__item-title card-title">
             <a class="popular__item-link card-link" href="">Сливочно-клубничное с присыпкой из белого шоколада</a>
           </h3>
@@ -245,14 +249,14 @@
             <span class="popular__item-number card-number">355 ₽</span>/кг
           </p>
           <div class="card-button-box">
-            <a class="card-button button">
+            <a class="card-button button" aria-label="Просмотреть Сливочно-клубничное мороженое с присыпкой из белого шоколада">
               Быстрый просмотр
             </a>
           </div>
         </li>
         <li class="popular__item card">
           <img class="popular__item-image card-image" src="img/popular-4.png"
-            alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
+            alt="" width="267" height="267">
           <h3 class="popular__item-title card-title">
             <a class="popular__item-link card-link" href="">Сливочное крем-брюле с карамельной подливкой</a>
           </h3>
@@ -260,7 +264,7 @@
             <span class="popular__item-number card-number">415 ₽</span>/кг
           </p>
           <div class="card-button-box">
-            <a class="card-button button">
+            <a class="card-button button" aria-label="Просмотреть Сливочное мороженое крем-брюле с карамельной подливкойа">
               Быстрый просмотр
             </a>
           </div>
@@ -346,7 +350,7 @@
           <br>
           (с 10 до 20 ежедневно)
         </p>
-        <a class="contacts-button button">
+        <a class="contacts-button button" href="">
           Форма обратной связи
         </a>
       </div>
@@ -357,8 +361,8 @@
   <div class="container footer-container">
     <ul class="socials">
       <li class="socials__item socials__item--facebook">
-        <a class="socials__item-link" href="">Facebook
-          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <a class="socials__item-link" href="" aria-label="Facebook">
+          <svg aria-hidden="true" focusable="false" role="img" aria-label="Логотип Facebook" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M16 0C12.8355 0 9.74207 0.938384 7.11088 2.69649C4.4797 4.45459 2.42894 6.95345 1.21793 9.87706C0.0069325 12.8007 -0.309921 16.0177 0.307443 19.1214C0.924806 22.2251 2.44866 25.0761 4.6863 27.3137C6.92394 29.5513 9.77487 31.0752 12.8786 31.6926C15.9823 32.3099 19.1993 31.9931 22.1229 30.7821C25.0466 29.5711 27.5454 27.5203 29.3035 24.8891C31.0616 22.2579 32 19.1645 32 16C32 11.7565 30.3143 7.68687 27.3137 4.68629C24.3131 1.68571 20.2435 0 16 0ZM20.06 9.45H17V12.9H20V16.34H17V25H14V16.34H11V12.9H14V9.45C13.9449 8.59575 14.2291 7.75426 14.7908 7.1083C15.3525 6.46234 16.1464 6.06407 17 6H20V9.45H20.06Z"
               fill="white" fill-opacity="0.8" />
@@ -366,9 +370,8 @@
         </a>
       </li>
       <li class="socials__item socials__item--vk">
-        <a class="socials__item-link" href="">
-          Vkontakte
-          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <a class="socials__item-link" href="" aria-label="Vkontakte">
+          <svg aria-hidden="true" focusable="false" role="img" aria-label="Логотип Vkontakte" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M16.64 14.49C16.9652 14.4904 17.2875 14.4293 17.59 14.31C17.8645 14.2077 18.0922 14.0085 18.23 13.75C18.3343 13.4964 18.3854 13.2241 18.38 12.95C18.376 12.7057 18.3143 12.4659 18.2 12.25C18.0714 12.0066 17.8523 11.8235 17.59 11.74C17.2687 11.627 16.9306 11.5695 16.59 11.57H14.59V14.57H15.16C15.75 14.52 16.24 14.51 16.64 14.49Z"
               fill="white" fill-opacity="0.8" />
@@ -382,9 +385,8 @@
         </a>
       </li>
       <li class="socials__item socials__item--inst">
-        <a class="socials__item-link" href="">
-          Instagram
-          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <a class="socials__item-link" href="" aria-label="Instagram">
+          <svg aria-hidden="true" focusable="false" role="img" aria-label="Логотип Instagram" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g opacity="0.8">
               <path
                 d="M20.92 16C20.92 17.3155 20.3974 18.5771 19.4673 19.5072C18.5371 20.4374 17.2755 20.96 15.96 20.96C14.6445 20.96 13.3829 20.4374 12.4528 19.5072C11.5226 18.5771 11 17.3155 11 16C11.001 15.6158 11.048 15.233 11.14 14.86H10.24V21.7H21.64V14.86H20.74C20.8406 15.2325 20.901 15.6147 20.92 16Z"
@@ -401,9 +403,8 @@
         </a>
       </li>
       <li class="socials__item socials__item--twitter">
-        <a class="socials__item-link" href="">
-          Twitter
-          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <a class="socials__item-link" href="" aria-label="Twitter">
+          <svg aria-hidden="true" focusable="false" role="img" aria-label="Логотип Twitter" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M16 0C12.8355 0 9.74207 0.938384 7.11088 2.69649C4.4797 4.45459 2.42894 6.95345 1.21793 9.87706C0.0069325 12.8007 -0.309921 16.0177 0.307443 19.1214C0.924806 22.2251 2.44866 25.0761 4.6863 27.3137C6.92394 29.5513 9.77487 31.0752 12.8786 31.6926C15.9823 32.3099 19.1993 31.9931 22.1229 30.7821C25.0466 29.5711 27.5454 27.5203 29.3035 24.8891C31.0616 22.2579 32 19.1645 32 16C32 11.7565 30.3143 7.68687 27.3137 4.68629C24.3131 1.68571 20.2435 0 16 0ZM23.94 12.81C23.69 19.33 20.48 23.64 12.94 23.51H12.46C12.01 23.51 7.91001 23.07 7.11001 21.69C8.8989 21.9555 10.7228 21.5494 12.23 20.55C11.18 20.26 9.31001 20.09 8.98001 17.7C9.39279 17.8642 9.84415 17.9058 10.28 17.82C9.00001 17 7.53001 16.3 7.61001 14.17C8.02796 14.4893 8.54454 14.652 9.07001 14.63C8.30001 14.4 6.92001 11.39 8.07001 9.85C10.07 11.64 12.14 13.33 15.87 13.49C16.1 11.28 17.11 9.79 19.04 9.17C19.7375 8.93332 20.4908 8.91568 21.1986 9.11946C21.9065 9.32323 22.5351 9.73867 23 10.31C23.74 10.08 24.45 9.84 25.19 9.62C25.1758 9.95711 25.0846 10.2865 24.9234 10.5829C24.7622 10.8793 24.5353 11.1349 24.26 11.33C24.5167 11.3601 24.7768 11.3336 25.0221 11.2524C25.2674 11.1712 25.492 11.0372 25.68 10.86C25.5628 11.2985 25.3443 11.7034 25.0421 12.0421C24.7399 12.3808 24.3624 12.6438 23.94 12.81Z"
               fill="white" fill-opacity="0.8" />
@@ -442,9 +443,11 @@
       <p class="news__popup-text">
         Мы обязательно вам ответим!
       </p>
-      <button class="news__popup-cross">Закрыть</button>
-      <input class="input news__popup-input" type="text" placeholder="Имя Фамилия">
-      <input class="input news__popup-input" type="text" placeholder="email@example.com">
+      <button class="news__popup-cross" type="button" aria-label="Закрыть">Закрыть</button>
+      <label  class="visually-hidden" for="feedback-name">Имя Фамилия</label>
+      <input class="input news__popup-input" type="text" placeholder="Имя Фамилия" id="feedback-name">
+      <label  class="visually-hidden" for="feedback-email">Email</label>
+      <input class="input news__popup-input" type="text" placeholder="email@example.com" id="feedback-email">
       <textarea class="news__popup-textarea textarea" name="" placeholder="В свободной форме"></textarea>
       <button class="button news__popup-button" type="submit">Отправить</button>
     </form>

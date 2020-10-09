@@ -1,6 +1,7 @@
 :root {
   /* Text colors */
   --accent: #fff;
+  --black: #000;
   --light-grey: #5A5A5A;
   --thin-grey: #C4C4C4;
   --light-grey-rgba: rgba(50, 50, 50, 0.2);
@@ -72,6 +73,11 @@ a:hover, a-active {
   border-bottom: var(--link-border-hover);
 }
 
+a:focus {
+  outline: 0;
+  box-shadow: 0 0 0 3px var(--accent);
+}
+
 .page-body {
   background-repeat: no-repeat;
   background-position: center 0;
@@ -104,9 +110,16 @@ body {
 }
 
 .visually-hidden {
-  visibility: hidden;
-  font-size: 0;
-  height: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .container {
@@ -124,7 +137,6 @@ body {
   text-shadow: 0px 2px 5px var(--text-shadow);
   background: var(--button-gradient);
   box-shadow: var(--button-shadow);
-  outline: none;
 }
 
 .button:hover {
@@ -136,6 +148,11 @@ body {
 
 .button:active {
   box-shadow: var(--button-active-shadow);
+}
+
+.button:focus {
+  box-shadow: 0 0 0 4px var(--accent);
+  outline: 0;
 }
 
 .card {
@@ -409,6 +426,7 @@ body {
   padding: 7px 13px;
   border: none;
   position: relative;
+  border-radius: 26px;
 }
 
 .menu__list-link::before {
@@ -730,6 +748,7 @@ body {
   width: 21px;
   height: 21px;
   border: 2px solid var(--accent);
+  background-color: transparent;
   border-radius: 50%;
   margin-right: 8px;
   cursor: pointer;
@@ -745,6 +764,11 @@ body {
 
 .slider__switcher--active {
   background-color: var(--accent);
+}
+
+.slider__switcher:focus {
+  outline: 0;
+  box-shadow: 0 0 0 3px var(--black);
 }
 
 .promo {
@@ -793,8 +817,7 @@ body {
 
 .promo__item-button {
   text-align: right;
-  height: 48px;
-  padding: 12px 22px 16px;
+  padding: 12px 22px;
   border-radius: 70px;
 }
 
@@ -926,6 +949,10 @@ body {
   border-bottom: var(--news-link-hover-border);
 }
 
+.news__item-link:focus {
+  box-shadow: 0 0 0 2px var(--black);
+}
+
 .news__mailing {
   padding: 5px 6px;
   display: flex;
@@ -950,6 +977,10 @@ body {
   border-radius: 70px;
   padding: 11px 19px 10px;
   margin-left: 13px;
+}
+
+.news__mailing-button:focus {
+  box-shadow: 0 0 0 3px var(--black);
 }
 
 .news__mailing-text {
@@ -1025,6 +1056,10 @@ body {
   display: block;
 }
 
+.news__popup-button:focus {
+  box-shadow: 0 0 0 3px var(--black);
+}
+
 .map {
   color: var(--dark-grey);
   font-size: 14px;
@@ -1081,6 +1116,10 @@ body {
   margin: 0;
 }
 
+.contacts-phone-number:focus {
+  box-shadow: 0 0 0 2px var(--black);
+}
+
 .contacts span {
   font-size: 18px;
   line-height: 24px;
@@ -1090,10 +1129,14 @@ body {
 .contacts-button {
   color: var(--accent);
   border: none;
-  padding: 11px 28px;
+  padding: 10px 28px;
   border-radius: 70px;
   cursor: pointer;
   height: 43px;
+}
+
+.contacts-button:focus {
+  box-shadow: 0 0 0 3px var(--black);
 }
 
 .footer {
@@ -1263,12 +1306,11 @@ body {
 }
 
 .catalog__filter-button {
-  height: 36px;
   width: 144px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
-  padding: 8px 29px 9px;
+  padding: 9px 29px;
   border: 2px solid var(--accent);
   border-radius: 20px;
   color: var(--accent);
@@ -1492,7 +1534,7 @@ body {
 .catalog__filter-fill-label::before {
   content: "";
   position: absolute;
-  top: 2;
+  top: 2px;
   left: -33px;
   width: 20px;
   height: 20px;
