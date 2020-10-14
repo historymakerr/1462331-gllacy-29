@@ -107,6 +107,7 @@ body {
   background-repeat: no-repeat;
   background-position: center 0;
   background-color: var(--left-slide-back);
+  background-image: url("../img/slider-back-left.png");
 }
 
 .visually-hidden {
