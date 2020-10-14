@@ -14,9 +14,9 @@ $(function() {
    ];
 
    var img = [
-      'url("../img/slider-back-left.png")',
-      'url("../img/slider-back-mid.png")',
-      'url("../img/slider-back-right.png")'
+      'url("img/slider-back-left.png")',
+      'url("img/slider-back-mid.png")',
+      'url("img/slider-back-right.png")'
    ];
 
    $('.slider-container').on('afterChange', function (e, slick, index) {
