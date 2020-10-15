@@ -1,36 +1,3 @@
-/* Slider */
-
-$(function() {
-   $('.slider-container').slick({
-      arrows: false,
-      dots: true
-   });   
-
-   var bgs = [
-      '#849D8F',   //фон при переходе на 1 слайдер
-      '#8996A6', //фон при переходе на 2 слайдер
-      '#9D8B84',  //фон при переходе на 3 слайдер
-      // .....
-   ];
-
-   var img = [
-      'url("img/slider-back-left.png")',
-      'url("img/slider-back-mid.png")',
-      'url("img/slider-back-right.png")'
-   ];
-
-   $('.slider-container').on('afterChange', function (e, slick, index) {
-      $('body').css('background-color', bgs[index]);
-      $('body').css('background-image', img[index]);
-   });
-});
-
-
-
-
-
-
-
 /* Modal */
 
 let newsPopup = document.querySelector('.news__popup');
@@ -78,7 +45,7 @@ window.addEventListener('keydown', function (evt) {
 
 /* Modal-required */
 
-submit.addEventListener('click', function(evt) {
+submit.addEventListener('click', function (evt) {
    if (!login.value || !password.value) {
       evt.preventDefault();
       newsPopup.classList.add('modal-error');
@@ -88,3 +55,37 @@ submit.addEventListener('click', function(evt) {
       localStorage.setItem('login', login.value);
    }
 });
+
+/* Slider */
+let slider = document.querySelector('.slider');
+let inputs = slider.querySelectorAll('input');
+
+let changeBack = function (inp) {
+   inp.addEventListener('click', function () {
+      let checkedInput = slider.querySelector(':checked');
+      let body = document.querySelector('body');
+
+      if (checkedInput.classList.contains('slider__input--left')) {
+         body.classList.add('page-body-1');
+         body.classList.remove('page-body-2');
+         body.classList.remove('page-body-3');
+
+      }
+      if (checkedInput.classList.contains('slider__input--mid')) {
+         body.classList.add('page-body-2');
+         body.classList.remove('page-body-1');
+         body.classList.remove('page-body-3');
+      }
+      if (checkedInput.classList.contains('slider__input--right')) {
+         body.classList.add('page-body-3');
+         body.classList.remove('page-body-1');
+         body.classList.remove('page-body-2');
+      }
+   });
+};
+
+
+for (let i = 0; i < inputs.length; i++) {
+   changeBack(inputs[i]);
+}
+

@@ -5,7 +5,6 @@
   <meta charset="utf-8">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/slick.css" rel="stylesheet">
   <link href="css/style.min.css" rel="stylesheet">
   <title>HTML Academy: Глейси</title>
 </head>
@@ -156,22 +155,30 @@
 
   <section class="slider">
     <div class="container slider-container">
-      <div class="slider__item slider__item-right">
-        <h3 class="slider__item-title slider__item-right-title">Пломбир с помадкой и клубничный щербет</h3>
-        <a class="slider__item-button button" href="">Давайте оба!</a>
-      </div>
-      <div class="slider__item slider__item-middle">
-        <h3 class="slider__item-title">Шоколадный пломбир и лимонный сорбет</h3>
-        <a class="slider__item-button button" href="">Давайте оба!</a>
-      </div>
-      <div class="slider__item slider__item-left">
-        <h3 class="slider__item-title">Крем-брюле и пломбир с малиновым джемом</h3>
-        <a class="slider__item-button button" href="">Давайте оба!</a>
+      <input class="slider__input slider__input--left" type="radio" id="slider-left" name="slider" checked>
+      <label class="slider__label slider__label--left" for="slider-left"></label>
+      <input class="slider__input slider__input--mid" type="radio" id="slider-mid" name="slider">
+      <label class="slider__label slider__label--mid" for="slider-mid"></label>
+      <input class="slider__input slider__input--right" type="radio" id="slider-right" name="slider">
+      <label class="slider__label slider__label--right" for="slider-right"></label>
+      <div class="slider__inner">
+        <div class="slider__item slider__item-left">
+          <h3 class="slider__item-title">Креgм-брюле и пломбир с малиновым джемом</h3>
+          <a class="slider__item-button button" href="">Давайте оба!</a>
+        </div>
+        <div class="slider__item slider__item-middle">
+          <h3 class="slider__item-title">Шоколадный пломбир и лимонный сорбет</h3>
+          <a class="slider__item-button button" href="">Давайте оба!</a>
+        </div>
+        <div class="slider__item slider__item-right">
+          <h3 class="slider__item-title slider__item-right-title">Пломбир с помадкой и клубничный щербет</h3>
+          <a class="slider__item-button button" href="">Давайте оба!</a>
+        </div>
       </div>
     </div>
   </section>
 
- 
+
 
   <section class="promo">
     <h2 class="promo__title visually-hidden">Промо-акции в Глейси</h2>
@@ -335,8 +342,7 @@
     <h2 class="map__title visually-hidden">Как найти Глейси</h2>
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253323!2d30.320858716382876!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1602682540566!5m2!1sru!2sru"
-      height="430" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-      tabindex="0"></iframe>
+      height="430" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     <div class="container map-container">
       <div class="contacts">
         <p class="contacts-address">
@@ -467,8 +473,6 @@
 
 
   <!-- <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p> -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="js/slick.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 

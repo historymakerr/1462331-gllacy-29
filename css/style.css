@@ -4,6 +4,7 @@
   --black: #000;
   --light-grey: #5A5A5A;
   --thin-grey: #C4C4C4;
+  --input-text: #999999;
   --light-grey-rgba: rgba(50, 50, 50, 0.2);
   --dark-grey: #323232;
   --border-grey: #353535;
@@ -81,6 +82,21 @@ a:focus {
 
 .page-body {
   transition: all .5s;
+}
+
+.page-body-1 {
+  background-color: var(--left-slide-back);
+  background-image: url("../img/slider-back-left.png");
+}
+
+.page-body-2 {
+  background-color: var(--mid-slide-back);
+  background-image: url("../img/slider-back-mid.png");
+}
+
+.page-body-3 {
+  background-color: var(--right-slide-back);
+  background-image: url("../img/slider-back-right.png");
 }
 
 .catalog-body {
@@ -215,21 +231,21 @@ body {
   border-radius: 4px;
   border: none;
   box-sizing: border-box;
-  border: 1px solid var(--input-border);
+  box-shadow: 0 0 0 1px var(--input-border);
   color: var(--dark-grey);
-  outline: 0;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
+  outline: 0;
+  color: var(--input-text);
 }
 
 .input:hover, .textarea:hover {
-  border-width: 2px;
+  box-shadow: 0 0 0 2px var(--input-border);
 }
 
 .input:focus, .textarea:focus {
-  border-color: var(--input-focus-border);
-  border-width: 2px;
+  box-shadow: 0 0 0 2px var(--input-focus-border);
 }
 
 .textarea {
@@ -280,7 +296,6 @@ body {
 
 .header-search-box {
   position: relative;
-  cursor: pointer;
 }
 
 .header-search-box:hover .header-search-popup {
@@ -698,11 +713,85 @@ body {
 
 .slider-container {
   position: relative;
+  overflow: hidden;
+}
+
+.slider__inner {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  width: 300%;
+  transition: all .5s;
+}
+
+.slider__controls {
+  position: absolute;
+  bottom: 28px;
+  left: 27px;
+  display: flex;
+  width: 80px;
+  justify-content: space-between;
+  z-index: 919;
+}
+
+.slider__input {
+  display: none;
+}
+
+.slider__input--left:checked + label {
+  background-color: var(--accent);
+}
+
+.slider__input--mid:checked + label {
+  background-color: var(--accent);
+}
+
+.slider__input--right:checked + label {
+  background-color: var(--accent);
+}
+
+.slider__input--left:checked ~ .slider__inner {
+  transform: translateX(0);
+}
+
+.slider__input--mid:checked ~ .slider__inner {
+  transform: translateX(-1146px);
+}
+
+.slider__input--right:checked ~ .slider__inner {
+  transform: translateX(-2292px);
+}
+
+.slider__label {
+  position: absolute;
+  left: 27px;
+  bottom: 28px;
+  min-width: 21px;
+  height: 21px;
+  border: 2px solid var(--accent);
+  border-radius: 50%;
+  transition: background .2s;
+  z-index: 91919;
+}
+
+.slider__label:hover {
+  background-color: var(--white-with-less-opacity);
+  cursor: pointer;
+}
+
+.slider__label--mid {
+  left: 56px;
+}
+
+.slider__label--right {
+  left: 85px;
 }
 
 .slider__item {
   font-weight: 700;
   padding-bottom: 3px;
+  width: 33%;
   padding-top: 275px;
   text-align: center;
 }
@@ -722,51 +811,8 @@ body {
   border-radius: 70px;
 }
 
-.slider__item-middle, .slider__item-right {
-  display: none;
-}
-
 .slider__item-right-title {
   max-width: 650px;
-}
-
-.slick-dots {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  width: 80px;
-  justify-content: space-between;
-  position: absolute;
-  bottom: 28px;
-  left: 27px;
-}
-
-.slick-dots button {
-  border-radius: 50%;
-  background-color: transparent;
-  font-size: 0;
-  width: 21px;
-  height: 21px;
-  border: 2px solid var(--accent);
-  outline: none;
-  cursor: pointer;
-}
-
-.slick-dots button:hover {
-  background-color: var(--white-with-less-opacity);
-}
-
-.slick-dots button:focus {
-  outline: 2px solid var(--light-grey);
-}
-
-.slick-active button {
-  background-color: var(--accent);
-}
-
-.slick-active button:hover {
-  background-color: var(--accent);
 }
 
 .promo {
@@ -1078,11 +1124,11 @@ body {
 .map iframe {
   padding: 0;
   margin: 0;
+  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 999;
-  width: 100%;
 }
 
 .map-container {
@@ -1320,7 +1366,7 @@ body {
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
-  padding: 7px 29px 6px;
+  padding: 9px 29px;
   border: 2px solid var(--accent);
   border-radius: 20px;
   color: var(--accent);
@@ -1544,7 +1590,7 @@ body {
 .catalog__filter-fill-label::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: 2;
   left: -33px;
   width: 20px;
   height: 20px;
@@ -1652,11 +1698,6 @@ body {
   background-color: var(--white-with-opacity);
   color: var(--accent);
   border: none;
-}
-
-.switcher-page--active:hover {
-  background-color: var(--accent);
-  color: var(--dark-grey);
 }
 
 .switcher-arrow {
