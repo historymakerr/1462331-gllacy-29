@@ -2,6 +2,7 @@
   /* Text colors */
   --accent: #fff;
   --black: #000;
+  --body-filter: rgba(0, 0, 0, .3);
   --light-grey: #5A5A5A;
   --thin-grey: #C4C4C4;
   --input-text: #999999;
@@ -82,6 +83,7 @@ a:focus {
 
 .page-body {
   transition: all .5s;
+  position: relative;
 }
 
 .page-body-1 {
@@ -126,6 +128,15 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.dark-filter {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--body-filter);
+  display: none;
+  z-index: 1000000;
 }
 
 .container {

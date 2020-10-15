@@ -4,6 +4,8 @@ let newsPopup = document.querySelector('.news__popup');
 let newsFormOpen = document.querySelector('.contacts-button');
 let newsFormClose = newsPopup.querySelector('.news__popup-cross');
 
+let filter = document.querySelector('.dark-filter');
+
 let login = newsPopup.querySelector('[name="login"]');
 let password = newsPopup.querySelector('[name="password"]');
 let submit = newsPopup.querySelector('.news__popup-button');
@@ -21,6 +23,7 @@ try {
 newsFormOpen.addEventListener('click', function (evt) {
    evt.preventDefault();
    newsPopup.classList.add('modal-show');
+   filter.style.display = 'block';
 
    if (storage) {
       login.value = localStorage.getItem('login');
@@ -32,6 +35,7 @@ newsFormOpen.addEventListener('click', function (evt) {
 newsFormClose.addEventListener('click', function () {
    newsPopup.classList.remove('modal-show');
    newsPopup.classList.remove('modal-error');
+   filter.style.display = 'none';
 });
 
 window.addEventListener('keydown', function (evt) {
@@ -39,6 +43,7 @@ window.addEventListener('keydown', function (evt) {
       if (evt.key === 'Escape') {
          newsPopup.classList.remove('modal-show');
          newsPopup.classList.remove('modal-error');
+         filter.style.display = 'none';
       }
    }
 });
