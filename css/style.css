@@ -767,11 +767,11 @@ body {
 }
 
 .slider__input--mid:checked ~ .slider__inner {
-  transform: translateX(-1146px);
+  transform: translateX(-1129px);
 }
 
 .slider__input--right:checked ~ .slider__inner {
-  transform: translateX(-2292px);
+  transform: translateX(-2262px);
 }
 
 .slider__label {
