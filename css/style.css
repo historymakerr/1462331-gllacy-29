@@ -187,6 +187,10 @@ body {
   display: block;
 }
 
+.card-image {
+  margin-top: 5px;
+}
+
 .card-link {
   display: inline;
 }
@@ -205,14 +209,13 @@ body {
   font-weight: 700;
   position: absolute;
   margin: 0;
-  top: 209px;
-  left: 0;
+  top: 214px;
+  left: 13px;
 }
 
 .card-number {
   font-size: 45px;
   line-height: 45px;
-  margin-right: -6px;
 }
 
 .card-button {
@@ -767,11 +770,11 @@ body {
 }
 
 .slider__input--mid:checked ~ .slider__inner {
-  transform: translateX(-1129px);
+  transform: translateX(-1146px);
 }
 
 .slider__input--right:checked ~ .slider__inner {
-  transform: translateX(-2262px);
+  transform: translateX(-2292px);
 }
 
 .slider__label {
@@ -802,7 +805,7 @@ body {
 .slider__item {
   font-weight: 700;
   padding-bottom: 3px;
-  width: 33%;
+  width: 33.33333%;
   padding-top: 275px;
   text-align: center;
 }
@@ -827,7 +830,7 @@ body {
 }
 
 .promo {
-  margin-bottom: 40px;
+  margin-bottom: 36px;
 }
 
 .promo-container {
@@ -879,21 +882,21 @@ body {
 .popular__items {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 -13px;
   margin-bottom: 40px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  column-gap: 26px;
 }
 
 .popular__item {
   position: relative;
+  padding: 0 13px;
 }
 
 .popular__item::before {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 5px;
+  left: 13px;
   content: "";
   width: 61px;
   height: 61px;
@@ -1157,6 +1160,7 @@ body {
   justify-content: flex-start;
   position: relative;
   z-index: 1999;
+  box-shadow: 0 0 15px 2px var(--black);
 }
 
 .contacts-address {
@@ -1260,6 +1264,7 @@ body {
   row-gap: 5px;
   padding: 0;
   margin: 0;
+  padding-top: 8px;
   justify-self: center;
   max-height: 50px;
   max-width: 500px;
@@ -1351,7 +1356,7 @@ body {
 }
 
 .catalog__filter {
-  margin-bottom: 38px;
+  margin-bottom: 33px;
 }
 
 .catalog__filter-fieldset {
@@ -1638,8 +1643,8 @@ body {
   padding: 0;
   margin: 0;
   grid-template-columns: repeat(4, 1fr);
-  row-gap: 35px;
-  column-gap: 26px;
+  row-gap: 30px;
+  margin: 0 -13px;
   margin-bottom: 77px;
 }
 
