@@ -239,6 +239,7 @@ body {
   left: 0;
   background-color: var(--white-with-opacity);
   box-shadow: var(--card-shadow);
+  border-radius: 4px;
 }
 
 .input, .textarea {
