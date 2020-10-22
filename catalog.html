@@ -59,7 +59,7 @@
                            d="M16 14.6652L11.0785 9.73294C11.9827 8.48188 12.3826 6.93501 12.1984 5.40134C12.0141 3.86767 11.2594 2.4601 10.0848 1.45982C8.91022 0.45954 7.40233 -0.0598191 5.86234 0.00548954C4.32234 0.0707982 2.86363 0.715967 1.77757 1.81212C0.691516 2.90827 0.0580813 4.3747 0.0038002 5.91849C-0.050481 7.46228 0.478388 8.96976 1.48476 10.1398C2.49113 11.3098 3.90092 12.0563 5.43251 12.2301C6.96409 12.4039 8.50472 11.9922 9.74663 11.0772L14.6586 16L16 14.6652ZM6.08152 10.3767C5.24079 10.3767 4.41895 10.1268 3.71991 9.65874C3.02087 9.19063 2.47604 8.5253 2.15431 7.74687C1.83258 6.96844 1.7484 6.11188 1.91241 5.28551C2.07643 4.45913 2.48128 3.70006 3.07576 3.10427C3.67024 2.50849 4.42766 2.10276 5.25223 1.93838C6.0768 1.77401 6.93149 1.85837 7.70822 2.1808C8.48495 2.50324 9.14883 3.04927 9.61591 3.74983C10.083 4.4504 10.3323 5.27404 10.3323 6.11661C10.3298 7.24568 9.88115 8.3278 9.08451 9.12618C8.28788 9.92456 7.20813 10.3742 6.08152 10.3767Z"
                            fill="white" />
                      </svg>
-   
+
                   </a>
                   <div class="header-search-popup">
                      <form class="header-search-popup-form" action="https://echo.htmlacademy.ru" method="post">
@@ -85,7 +85,8 @@
                         <input class="input header-login-popup__input" type="email" placeholder="email@example.com"
                            id="email">
                         <label class="visually-hidden" for="password">Пароль</label>
-                        <input class="input header-login-popup__input" type="password" placeholder="......" id="password">
+                        <input class="input header-login-popup__input" type="password" placeholder="......"
+                           id="password">
                         <button class="button header-login-popup__button" type="button"
                            aria-label="Войти на сайт">Войти</button>
                         <div class="header-login-popup__help">
@@ -95,7 +96,7 @@
                      </form>
                   </div>
                </div>
-   
+
                <div class="header-cart-box">
                   <a class="header-cart header-cart--filled" href="">
                      Пусто
@@ -104,7 +105,8 @@
                      <div class="header-cart__popup-inner">
                         <ul class="header-cart__popup-items">
                            <li class="header-cart__popup-item">
-                              <button class="header-cart__popup-item-button" type="button" aria-label="Закрыть"></button>
+                              <button class="header-cart__popup-item-button" type="button"
+                                 aria-label="Закрыть"></button>
                               <img class="header-cart__popup-item-icon" src="img/icons/cart-icon-1.png"
                                  alt="Пломбир с апельсиновым джемом" width="33" height="33">
                               <h3 class="header-cart__popup-item-title">
@@ -175,12 +177,14 @@
          </h1>
 
          <section class="catalog__filter">
+            <h2 class="visually-hidden catalog__filter-title">Фильтр товаров</h2>
             <form class="catalog__form" action="https://echo.htmlacademy.ru" method="post">
                <fieldset class="catalog__filter-sort catalog__filter-fieldset">
                   <legend class="catalog__filter-legend">
                      Сортировка:
                   </legend>
                   <div class="catalog__filter-sort-box">
+                     <label class="catalog__filter-sort-label visually-hidden" for="sort">Сортировка мороженого</label>
                      <select id="sort" class="catalog__filter-sort-select">
                         <option value="popular">по популярности</option>
                         <option value="fromCheapest">сначала недорогие</option>
@@ -190,25 +194,26 @@
                   </div>
                </fieldset>
                <fieldset class="catalog__filter-price catalog__filter-fieldset">
-                  <legend class="catalog__filter-price-legend">
-                     Цена:
-                     <input class="catalog__filter-price-input" type="text" value="100">₽ –
-                     <input class="catalog__filter-price-input" type="text" value="500">₽
-                  </legend>
+                  <div class="catalog__filter-price-top">
+                     <p class="catalog__filter-price-legend">
+                        Цена:
+                     </p>
+                     <label class="catalog__filter-price-min visually-hidden" for="min-price">Нижняя граница
+                        цены</label>
+                     <input class="catalog__filter-price-input" type="text" value="100" id="min-price"> –
+                     <label class="catalog__filter-price-max visually-hidden" for="max-price">Верхняя граница
+                        цены</label>
+                     <input class="catalog__filter-price-input" type="text" value="500" id="max-price">
+                  </div>
                   <div class="catalog__filter-range">
                      <div class="catalog__filter-range-scale">
-                        <div class="catalog__filter-range-bar" style="
-                              margin-left: 20%;
-                              width: 50%;
-                           "></div>
+                        <div class="catalog__filter-range-bar" style=" margin-left: 20%; width: 50%;"></div>
                      </div>
                      <div class="catalog__filter-range-controls">
-                        <div class="catalog__filter-range-toggle catalog__filter-range-toggle--min" style="
-                           left: 20%;
-                           "></div>
-                        <div class="catalog__filter-range-toggle catalog__filter-range-toggle--max" style="
-                           left: 70%;
-                           "></div>
+                        <div class="catalog__filter-range-toggle catalog__filter-range-toggle--min" tabindex="0"
+                           style="left: 20%;" title="Нижняя граница цены"></div>
+                        <div class="catalog__filter-range-toggle catalog__filter-range-toggle--max" tabindex="0"
+                           style="left: 70%;" title="Верхняя граница цены"></div>
                      </div>
                   </div>
                </fieldset>
@@ -263,7 +268,7 @@
          <ul class="catalog__list">
             <li class="catalog__card card">
                <img class="catalog__card-image card-image" src="img/popular-1.png" width="267" height="267"
-                  alt="">
+                  alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                <p class="catalog__card-price card-price">
                   <span class="catalog__card-number card-number">310 ₽</span>
                   /кг
@@ -273,14 +278,15 @@
                      стружкой</a>
                </h2>
                <div class="card-button-box">
-                  <a class="card-button button" aria-label="Просмотреть Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">
+                  <a class="card-button button"
+                     aria-label="Просмотреть Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">
                      Быстрый просмотр
                   </a>
                </div>
             </li>
             <li class="catalog__card card">
                <img class="catalog__card-image card-image" src="img/popular-2.png" width="267" height="267"
-                  alt="">
+                  alt="Сливочно-кофейное с кусочками шоколада">
                <p class="catalog__card-price card-price">
                   <span class="catalog__card-number card-number">380 ₽</span>
                   /кг
@@ -289,14 +295,15 @@
                   <a class="catalog__card-link card-link" href="">Сливочно-кофейное с кусочками шоколада</a>
                </h2>
                <div class="card-button-box">
-                  <a class="card-button button" aria-label="Просмотреть Сливочно-кофейное мороженое с кусочками шоколада">
+                  <a class="card-button button"
+                     aria-label="Просмотреть Сливочно-кофейное мороженое с кусочками шоколада">
                      Быстрый просмотр
                   </a>
                </div>
             </li>
             <li class="catalog__card card">
                <img class="catalog__card-image card-image" src="img/popular-3.png" width="267" height="267"
-                  alt="">
+                  alt="Сливочно-клубничное с присыпкой из белого шоколада">
                <p class="catalog__card-price card-price">
                   <span class="catalog__card-number card-number">355 ₽</span>
                   /кг
@@ -305,14 +312,15 @@
                   <a class="catalog__card-link card-link" href="">Сливочно-клубничное с присыпкой из белого шоколада</a>
                </h2>
                <div class="card-button-box">
-                  <a class="card-button button" aria-label="Просмотреть Сливочно-клубничное мороженое с присыпкой из белого шоколада">
+                  <a class="card-button button"
+                     aria-label="Просмотреть Сливочно-клубничное мороженое с присыпкой из белого шоколада">
                      Быстрый просмотр
                   </a>
                </div>
             </li>
             <li class="catalog__card card">
                <img class="catalog__card-image card-image" src="img/popular-4.png" width="267" height="267"
-                  alt="">
+                  alt="Сливочное крем-брюле с карамельной подливкой">
                <p class="catalog__card-price card-price">
                   <span class="catalog__card-number card-number">415 ₽</span>
                   /кг
@@ -321,14 +329,15 @@
                   <a class="catalog__card-link card-link" href="">Сливочное крем-брюле с карамельной подливкой</a>
                </h2>
                <div class="card-button-box">
-                  <a class="card-button button" aria-label="Просмотреть Сливочное мороженое крем-брюле с карамельной подливкой">
+                  <a class="card-button button"
+                     aria-label="Просмотреть Сливочное мороженое крем-брюле с карамельной подливкой">
                      Быстрый просмотр
                   </a>
                </div>
             </li>
             <li class="catalog__card card">
                <img class="catalog__card-image card-image" src="img/cream-cranberry.png" width="267" height="267"
-                  alt="">
+                  alt="Сливочное с брусничным джемом">
                <p class="catalog__card-price card-price">
                   <span class="catalog__card-number card-number">325 ₽</span>
                   /кг
@@ -344,7 +353,7 @@
             </li>
             <li class="catalog__card card">
                <img class="catalog__card-image card-image" src="img/cream-blackberry.png" width="267" height="267"
-                  alt="">
+                  alt="Сливочно-черничное с цельными ягодами черники">
                <p class="catalog__card-price card-price">
                   <span class="catalog__card-number card-number">410 ₽</span>
                   /кг
@@ -353,14 +362,15 @@
                   <a class="catalog__card-link card-link" href="">Сливочно-черничное с цельными ягодами черники</a>
                </h2>
                <div class="card-button-box">
-                  <a class="card-button button" aria-label="Просмотреть Сливочно-черничное мороженое с цельными ягодами черники">
+                  <a class="card-button button"
+                     aria-label="Просмотреть Сливочно-черничное мороженое с цельными ягодами черники">
                      Быстрый просмотр
                   </a>
                </div>
             </li>
             <li class="catalog__card card">
                <img class="catalog__card-image card-image" src="img/cream-lemon.png" width="267" height="267"
-                  alt="">
+                  alt="Сливочно-лимонное с карамельной присыпкой">
                <p class="catalog__card-price card-price">
                   <span class="catalog__card-number card-number">315 ₽</span>
                   /кг
@@ -369,14 +379,15 @@
                   <a class="catalog__card-link card-link" href="">Сливочно-лимонное с карамельной присыпкой</a>
                </h2>
                <div class="card-button-box">
-                  <a class="card-button button" aria-label="Просмотреть Сливочно-лимонное мороженое с карамельной присыпкой">
+                  <a class="card-button button"
+                     aria-label="Просмотреть Сливочно-лимонное мороженое с карамельной присыпкой">
                      Быстрый просмотр
                   </a>
                </div>
             </li>
             <li class="catalog__card card">
                <img class="catalog__card-image card-image" src="img/cream-chocolate.png" width="267" height="267"
-                  alt="">
+                  alt="Сливочное с шоколадной стружкой">
                <p class="catalog__card-price card-price">
                   <span class="catalog__card-number card-number">320 ₽</span>
                   /кг
@@ -392,7 +403,7 @@
             </li>
             <li class="catalog__card card">
                <img class="catalog__card-image card-image" src="img/cream-vanila.png" width="267" height="267"
-                  alt="">
+                  alt="Сливочно-ванильное с кусочками шоколада">
                <p class="catalog__card-price card-price">
                   <span class="catalog__card-number card-number">440 ₽</span>
                   /кг
@@ -401,14 +412,15 @@
                   <a class="catalog__card-link card-link" href="">Сливочно-ванильное с кусочками шоколада</a>
                </h2>
                <div class="card-button-box">
-                  <a class="card-button button" aria-label="Просмотреть Сливочно-ванильное мороженое с кусочками шоколада">
+                  <a class="card-button button"
+                     aria-label="Просмотреть Сливочно-ванильное мороженое с кусочками шоколада">
                      Быстрый просмотр
                   </a>
                </div>
             </li>
             <li class="catalog__card card">
                <img class="catalog__card-image card-image" src="img/cream-menthol.png" width="267" height="267"
-                  alt="">
+                  alt="Сливочноe с ментоловым сиропом">
                <p class="catalog__card-price card-price">
                   <span class="catalog__card-number card-number">435 ₽</span>
                   /кг
@@ -424,7 +436,7 @@
             </li>
             <li class="catalog__card card">
                <img class="catalog__card-image card-image" src="img/cream-black-chocolate.png" width="267" height="267"
-                  alt="">
+                  alt="Сливочное с кусочками черного шоколада">
                <p class="catalog__card-price card-price">
                   <span class="catalog__card-number card-number">355 ₽</span>
                   /кг
@@ -433,14 +445,15 @@
                   <a class="catalog__card-link card-link" href="">Сливочное с кусочками черного шоколада</a>
                </h2>
                <div class="card-button-box">
-                  <a class="card-button button" aria-label="Просмотреть Сливочное мороженое с кусочками черного шоколада">
+                  <a class="card-button button"
+                     aria-label="Просмотреть Сливочное мороженое с кусочками черного шоколада">
                      Быстрый просмотр
                   </a>
                </div>
             </li>
             <li class="catalog__card card">
                <img class="catalog__card-image card-image" src="img/cream-mint.png" width="267" height="267"
-                  alt="">
+                  alt="Сливочное с мятным сиропом">
                <p class="catalog__card-price card-price">
                   <span class="catalog__card-number card-number">420 ₽</span>
                   /кг
