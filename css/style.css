@@ -658,6 +658,7 @@ body {
   z-index: 8888888;
   padding-top: 10px;
   color: var(--dark-grey);
+  text-align: right;
 }
 
 .header-cart__popup-inner {
@@ -683,8 +684,9 @@ body {
 .header-cart__popup-button {
   padding: 11px 15px;
   border-radius: 26px;
-  display: block;
   margin-left: auto;
+  margin-right: 0;
+  display: inline-block;
   cursor: pointer;
 }
 
@@ -718,11 +720,13 @@ body {
   font-size: 13px;
   line-height: 16px;
   font-weight: 400;
+  text-align: left;
 }
 
 .header-cart__popup-item-calc {
   width: 95px;
   margin-right: 26px;
+  text-align: left;
 }
 
 .header-cart__popup-item-calc span {
