@@ -78,7 +78,7 @@ a:hover, a-active {
 
 a:focus {
   outline: 0;
-  box-shadow: 0 0 0 3px var(--accent);
+  box-shadow: 0 0 0 2px var(--black);
 }
 
 .page-body {
@@ -165,11 +165,6 @@ body {
 
 .button:active {
   box-shadow: var(--button-active-shadow);
-}
-
-.button:focus {
-  box-shadow: 0 0 0 4px var(--accent);
-  outline: 0;
 }
 
 .card {
@@ -835,6 +830,7 @@ body {
   line-height: 44px;
   padding: 9px 40px 10px;
   border-radius: 70px;
+  outline: 0;
 }
 
 .slider__item-right-title {
@@ -1049,10 +1045,6 @@ body {
   margin-left: 13px;
 }
 
-.news__mailing-button:focus {
-  box-shadow: 0 0 0 3px var(--black);
-}
-
 .news__mailing-text {
   color: var(--light-grey);
   margin: 0;
@@ -1213,10 +1205,6 @@ body {
   border-radius: 70px;
   cursor: pointer;
   height: 43px;
-}
-
-.contacts-button:focus {
-  box-shadow: 0 0 0 3px var(--black);
 }
 
 .footer {
